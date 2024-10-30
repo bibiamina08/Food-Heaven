@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { TfiTimer } from "react-icons/tfi";
 import { GoPeople } from "react-icons/go";
 import { HiOutlineFlag } from "react-icons/hi2";
+import RecipeCard from "../components/RecipeCard";
 
 
 export default function Favourites() {
@@ -18,7 +19,9 @@ export default function Favourites() {
       <h1 className="text-4xl font-extrabold tracking-tight max-w-[35rem]">
         My Favourite Recipes.
       </h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 shadow-lg">
       {recipes.map((recipe) => {
+       
           return (
             <Link
               to={`/recipe/${recipe.id}`}
@@ -49,6 +52,7 @@ export default function Favourites() {
           );
           return <RecipeCard key={recipe.name} recipe={recipe} />;
         })}
+        </div>
       
     </section>
    

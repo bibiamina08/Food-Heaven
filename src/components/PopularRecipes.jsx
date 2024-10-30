@@ -14,7 +14,7 @@ export default function PopularRecipes() {
       <h2 className="text-4xl font-extrabold tracking-tight pb-10">
         Popular Recipes.
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 shadow-lg">
         {recipes.map((recipe) => {
           return (
             <Link
@@ -24,7 +24,7 @@ export default function PopularRecipes() {
               <img
                 src={recipe.image}
                 alt={recipe.name}
-                className="rounded p-2"
+                className="rounded p-2 shadow-lg"
               />
               <div className="px-4 py-3">
                 <h4 className="text-xl font-bold pb-4">{recipe.name}</h4>
