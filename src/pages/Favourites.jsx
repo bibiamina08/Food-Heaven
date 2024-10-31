@@ -19,7 +19,7 @@ export default function Favourites() {
       <h1 className="text-4xl font-extrabold tracking-tight max-w-[35rem]">
         My Favourite Recipes.
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 shadow-lg">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 shadow-lg">
       {recipes.map((recipe) => {
        
           return (
@@ -52,7 +52,7 @@ export default function Favourites() {
           );
           return <RecipeCard key={recipe.name} recipe={recipe} />;
         })}
-        </div>
+        </div> */}
       
     </section>
    

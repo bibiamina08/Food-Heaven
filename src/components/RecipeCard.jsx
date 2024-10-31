@@ -4,6 +4,7 @@ import { GoPeople } from "react-icons/go";
 import { HiOutlineFlag } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 import toast from "react-hot-toast";
+import { FaStar } from "react-icons/fa";
 export default function RecipeCard(props) {
   const recipe = props.recipe;
   const [isRecipeExists, setIsRecipeExists] = useState(
@@ -41,7 +42,15 @@ export default function RecipeCard(props) {
         alt={recipe.name}
         className="rounded-tl rounded-tr"
       />
-      <div className="px-4 py-3">
+      <div className="flex items-center gap-1 px-4 py-4">
+      <FaStar className="text-orange-500 " />
+      <FaStar className="text-orange-500 " />
+      <FaStar className="text-orange-500 " /> 
+      <FaStar className="text-orange-500 " />    
+      <FaStar className="text-orange-500 " />
+      </div>
+      <div className=" ">
+      
         <h4 className="text-xl font-bold pb-4">{recipe.name}</h4>
         <div className="space-y-2">
           <span className="flex items-center gap-x-2 font-medium">

@@ -6,6 +6,7 @@ import { HiOutlineFlag } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 import RecipeCard from "./RecipeCard";
 
+
 export default function PopularRecipes() {
   const { recipes } = useFetchRecipes(9);
 
@@ -20,13 +21,16 @@ export default function PopularRecipes() {
             <Link
               to={`/recipe/${recipe.id}`}
               className="bg-base-100 border border-base-200 rounded shadow-sm"
+              key={recipe.id}
             >
+            
               <img
                 src={recipe.image}
                 alt={recipe.name}
                 className="rounded p-2 shadow-lg"
               />
               <div className="px-4 py-3">
+                
                 <h4 className="text-xl font-bold pb-4">{recipe.name}</h4>
                 <div className="space-y-2">
                   <span className="flex items-center gap-x-2 font-medium">
