@@ -3,8 +3,8 @@ import React from 'react'
 
 export default function About() {
   return (
-    <section className="container mx-auto py-5 bg-gray-500/25 ">
-    <div className="rounded-lg">
+    <section className="py-5 bg-gray-500/25 ">
+    <div className="rounded-lg container mx-auto ">
       <div className="hero-content flex flex-col lg:flex-row-reverse gap-10">
         <img
           src="aboutpic.jpg"
@@ -24,7 +24,7 @@ export default function About() {
             Voluptatibus nostrum cumque ut perspiciatis libero sint quos
             deleniti rerum. At eaque optio sed! Lorem ipsum dolor sit amet.
           </p>
-          <button className="btn bg-[#FF5500] text-lg text-white border-none px-6">Learn More</button>
+        
         </div>
       </div>
     </div>

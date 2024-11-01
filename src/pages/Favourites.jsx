@@ -19,40 +19,7 @@ export default function Favourites() {
       <h1 className="text-4xl font-extrabold tracking-tight max-w-[35rem]">
         My Favourite Recipes.
       </h1>
-      {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 shadow-lg">
-      {recipes.map((recipe) => {
-       
-          return (
-            <Link
-              to={`/recipe/${recipe.id}`}
-              className="bg-base-100 border border-base-200 rounded shadow-sm"
-            >
-              <img
-                src={recipe.image}
-                alt={recipe.name}
-                className="rounded p-2"
-              />
-              <div className="px-4 py-3">
-                <h4 className="text-xl font-bold pb-4">{recipe.name}</h4>
-                <div className="space-y-2">
-                  <span className="flex items-center gap-x-2 font-medium">
-                    <TfiTimer /> Cook Time: {recipe.cookTimeMinutes}
-                  </span>
-                  <span className="flex items-center gap-x-2 font-medium">
-                    <GoPeople />
-                    Servings: {recipe.servings}
-                  </span>
-                  <span className="flex items-center gap-x-2 font-medium">
-                    <HiOutlineFlag />
-                    Cuisine: {recipe.cuisine}
-                  </span>
-                </div>
-              </div>
-            </Link>
-          );
-          return <RecipeCard key={recipe.name} recipe={recipe} />;
-        })}
-        </div> */}
+     
       
     </section>
    
