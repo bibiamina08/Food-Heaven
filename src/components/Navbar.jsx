@@ -43,7 +43,7 @@ export default function Navbar() {
           </ul>
         </div>
         <Link to="/" className="btn btn-ghost text-xl ">
-        <FaBowlFood className="text-[#FF5500] size-12" /><h1 className="font-serif text-4xl text-white font-extrabold">Food Heaven</h1>
+        <FaBowlFood className="text-[#FF5500] size-6  lg:size-12 md:size-8" /><h1 className="font-serif text-1xl lg:text-4xl md:2xl text-white font-extrabold">Food Heaven</h1>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -63,8 +63,8 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn bg-[#FF5500] text-white border-none">
-          <FaUserAlt className="text-white" />
+        <a className="btn bg-[#FF5500] text-white border-none ">
+          <FaUserAlt className="text-white " />
           Login
         </a>
       </div>
