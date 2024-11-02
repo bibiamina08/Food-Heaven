@@ -1,6 +1,6 @@
 import useFetchRecipes from "../hooks/useFetchRecipes";
 import RecipeCard from "../components/RecipeCard";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 export default function Recipes() {
   const { recipes } = useFetchRecipes();
@@ -13,6 +13,9 @@ export default function Recipes() {
     });
     setFileteredRecipes(result);
   }
+  useEffect(() => {
+    setFileteredRecipes(recipes);
+  }, [recipes]);
   return (
 
   <div>
@@ -48,7 +51,17 @@ export default function Recipes() {
         )}
       </div>
     </div>
-  
+    {fileteredRecipes.length ? (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {fileteredRecipes.map((recipe) => {
+            return <RecipeCard key={recipe.name} recipe={recipe} />;
+          })}
+        </div>
+      ) : (
+        <div className="min-h-96 text-center pt-10 text-2xl">
+          <span>No Recipes Found</span>
+        </div>
+      )}
   </div>
   );
 }
